@@ -1,0 +1,28 @@
+Create Java application for storing the customer details of the Online e-shop utility. 
+
+Details about Customer :
+(custId(int)--automatically generated (unique --primary key) ,email(string),dateOfBirth(Date),contactInfo -- has-a relationship: create it as the inner class --- countryCode,state,zipCode,phone
+
+Validations :
+1. Customer's age > 18 yrs.
+2. email must contain : @ character.
+
+In a Tester application : Support the following functionality via choices.
+
+Must Create suitable form of Collection to store customers.
+
+Choice 1. Add new customer : accept cust details , validate the same. If validation err, raise the custom exception , display proper err msg via catch clause.
+If validations succeed, then generate custId, create the customer record(object) & add it to the customer list & return the CustId to the customer along with the success msg.
+
+Choice 2. View All Customer  details.(via for-each,iterator ,list iterator)
+
+Choice 3 : Sort the customers as per email & display sorted list
+
+Choice 4 : Remove Customer .
+I/p --- Customer Id 
+O/p --- Customer removed successfully or Customer not found error mesg.
+
+
+Choice 5 : Update Customer Subscription
+I/p -- Customer ID & update amount
+O/p -- Customer updated successfully or Customer not found error mesg.
